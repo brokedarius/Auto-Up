@@ -154,14 +154,15 @@ Here is an example how you need to have it setup for the script to work. Just co
 {
     "tracker_abbreviations": {
         "mytrackergroup": [
-            "http://XXXX.XXXX.XX:XXXX/XXXX/announce",
-            "http://XXXX.XXXX.XX:XXXX/XXXX/announce"
+            "http://tracker.empornium.sx:XXXX/XXXX/announce",
+            "http://tracker.pornbay.wtf:XXXX/XXXX/announce"
         ],
-        "EMP": "http://XXXX.XXXX.XX:XXXX/XXXX/announce",
-        "PB": "http://XXXX.XXXX.XX:XXXX/XXXX/announce"
+        "EMP": "http://tracker.empornium.sx:XXXX/XXXX/announce",
+        "PB": "http://tracker.pornbay.wtf:XXXX/XXXX/announce"
     },
       "advertise": false
 }
+
 
 
 
