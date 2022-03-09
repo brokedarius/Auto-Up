@@ -18,6 +18,8 @@ Requirements
 
 -Chrome 96 (Portable version highly recommended)
 
+(Script should work just as well with a portable chromium of the same version, newer version of the browsers should work as well but they were not tested.)
+
 You can either use a portable version, a separate profile or the one you already got if that's the case, just point the script to your local profile and make sure in any case you are logged in to the site. 
 
 -Powershell 5 (If you have windows, it should be installed just make sure you have execution policy set to unrestricted or else you won't be able to run any .ps1 scripts in your machine.)
@@ -27,6 +29,8 @@ You can either use a portable version, a separate profile or the one you already
 -Python 3 (Added to path)
 
 (Technically you could remove the need for python by using another CLI based torrent generator than py3createtorrent.)
+
+-PS1 to Exe or WinPS2-Exe, former is preferable.
 
 -Transmission or any torrent client that can auto-add torrents from a specific folder without opening a file dialog (Qbittorrent or Tixati seem to work as well), I just like the simplicity of transmission for the process.
 
@@ -61,8 +65,6 @@ C:\ChromeDriver-Selenium\Webdriver.xml
 
 Default Google Chrome binaries directory 
 ========================================
-
-(High chances the script works just as well with a portable chromium of the same version, newer version of the browsers should work as well but they were not tested.)
 
 C:\GoogleChrome\App\Chrome-bin\chrome.exe
 
@@ -158,11 +160,11 @@ Here is an example how you need to have it setup for the script to work. Just co
 {
     "tracker_abbreviations": {
         "mytrackergroup": [
-            "http://tracker.empornium.sx:XXXX/XXXX/announce",
-            "http://tracker.pornbay.wtf:XXXX/XXXX/announce"
+            "http://XXXX.XXXX.XX:XXXX/XXXX/announce",
+            "http://XXXX.XXXX.XX:XXXX/XXXX/announce"
         ],
-        "EMP": "http://tracker.empornium.sx:XXXX/XXXX/announce",
-        "PB": "http://tracker.pornbay.wtf:XXXX/XXXX/announce"
+        "EMP": "http://XXXX.XXXX.XX:XXXX/XXXX/announce",
+        "PB": "http://XXXX.XXXX.XX:XXXX/XXXX/announce"
     },
       "advertise": false
 }
