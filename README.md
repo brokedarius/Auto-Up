@@ -51,12 +51,16 @@ You can change those as much as you want, the $ENV:USERNAME variable is there so
 \Desktop\Uploads\Torrents\
 
 Default ChromeDriver-Selenium directory
+=======================================
 
 C:\ChromeDriver-Selenium\Chromedriver.exe 
+
 C:\ChromeDriver-Selenium\Webdriver.dll
+
 C:\ChromeDriver-Selenium\Webdriver.xml
 
 Default Google Chrome binaries directory 
+========================================
 
 (High chances the script works just as well with a portable chromium of the same version, newer version of the browsers should work as well but they were not tested.)
 
