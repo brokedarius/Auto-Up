@@ -1,5 +1,5 @@
-# Auto-Up
-Automate uploading across trackers.
+# **Auto-Up**
+**Automate uploading across trackers.**
 
 The aim of this collection of scripts is to help uploaders post stuff faster and avoid repetitive tasks. I tried to automate as much of the work as possible while keeping control where required such as categories, tags, presentations but only in the areas that must require intervention. All the rest is fully automated. This is mostly for those that which to upload more than 10 torrents at once.
 
@@ -11,7 +11,7 @@ I wanted this as something where you can just select files and upload them with 
 
 Feel free to leave any suggestions/feedback that could potentially improve on this.
 
-Requirements
+**Requirements**
 ============ 
 
 -Chromedriver 96
@@ -61,7 +61,7 @@ https://github.com/MScholtes/Win-PS2EXE
 
 Best practice would be to generate the screens prior to running the script in order to be able to write quality presentations.
 
-DEFAULT DIRECTORIES 
+**Default Directories**
 ===================
 
 The script work out of the box if the following directories are created. Just compile them where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
@@ -77,7 +77,7 @@ You can change those as much as you want, the $ENV:USERNAME variable is there so
 \Desktop\Uploads\Torrents\
 ```
 
-Default ChromeDriver-Selenium directory
+**Default ChromeDriver-Selenium directory**
 =======================================
 ```
 C:\ChromeDriver-Selenium\Chromedriver.exe 
@@ -87,7 +87,7 @@ C:\ChromeDriver-Selenium\Webdriver.dll
 C:\ChromeDriver-Selenium\Webdriver.xml
 ```
 
-Default Google Chrome binaries directory 
+**Default Google Chrome binaries directory** 
 ========================================
 ```
 C:\Google Chrome\App\Chrome-bin\chrome.exe
@@ -133,17 +133,17 @@ The script can technically support Adult Games as well though I have not tried a
 If you want to do a test run before actually uploading you can comment out the last lines after #FINALIZE UPLOAD in the script.
 
 
-HEADFUL MODE INFO
+**Headful Mode Info**
 =================
 
 In headful mode, once it starts you can minimize the browser and let it run, when it's done and a message will appear on the Powershell console.
 
-HEADLESS MODE INFO
+**Headless Mode Info**
 ==================
 
 You have to log yourself in the first time, I will post the login script on the respective trackers to make it easy. I will try to add more verbose and progress bars in the future.
 
-SEMI AUTO MODE INFO
+**Semi Auto Info**
 ===================
 
 The semi-auto mode will pick up the screens and covers from their respective directories but you will ask for your input for the remaining process. Categories, tags and titles will be filled in the console. In case you made mistakes you will be able to cancel the process at the presentation step.
@@ -154,7 +154,7 @@ Supports undo/redo.
 
 In semi-auto mode you will be able to decide if you approve a dupe or not with a yes or no dialog.
 
-FULL AUTO MODE INFO
+**Full Auto Mode Info**
 ===================
 
 Be sure to put all your text files in the presentation folder, you can change or remove the default _i suffix if you don't want to use it. 
@@ -194,7 +194,7 @@ PRESENTATION
 [screens]
 ```
 
-PY3CREATE TORRENT CONFIG FILE
+Py3CreateTorrent Config File
 =============================
 
 Your passkeys will be stored there for more convenience, if you ever need to change those you can just update that specific file, it allows you to create shortcut names for your trackers.
