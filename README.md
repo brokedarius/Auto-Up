@@ -55,7 +55,7 @@ https://www.majorgeeks.com/files/details/ps1_to_exe.html
 
 https://github.com/MScholtes/Win-PS2EXE
 
--Transmission or any torrent client that can auto-add torrents from a specific folder without opening a file dialog (Qbittorrent or Tixati seem to work as well), I just like the simplicity of transmission for the process.
+-Transmission or any torrent client that can auto-add torrents from a specific folder without opening a file dialog.
 
 -Optional: Command line screen generator like MTN, mt or EZthumb. (You can skip this part if you prefer to generate screens on your own, else add a line for screen generation right after the first ForEach loop.)
 
@@ -66,7 +66,7 @@ Best practice would be to generate the screens prior to running the script in or
 
 The script work out of the box if the following directories are created. Just compile them where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
 
-Feel free to edit any of this and recompile with WINPS2-EXE to suit your likings, I just tried to cover most use cases and have it work out of the box.
+Feel free to edit any of this and recompile it to suit your likings, I just tried to cover most use cases and have it work out of the box.
 
 You can change those as much as you want, the $ENV:USERNAME variable is there so it works out of the box on any setup, just represents your current username on windows.
 
@@ -124,14 +124,9 @@ Movie.mkv
 /Desktop/Uploads/Covers/Movie_c.txt
 ```
 
-The script supports individual files, megapacks, image sets, even isos upload just as well. Just make sure to put the screens and covers in their respective folders for those.
-
-The only exception where things differ slightly is for ISO uploads as individual files as those tend to have multiple screens, when you upload them just name the screens s1.jpg, s2.jpg, s3.jpg, so on and so forth. If you upload them as folders, never mind this.
-
-The script can technically support Adult Games as well though I have not tried and don't know much about those.
+The script supports individual files, multi-files, images, and compressed files just as well. Just make sure to put the screens and covers in their respective folders for those.
 
 If you want to do a test run before actually uploading you can comment out the last lines after #FINALIZE UPLOAD in the script.
-
 
 **Headful Mode Info**
 =================
