@@ -63,7 +63,9 @@ https://github.com/MScholtes/Win-PS2EXE
 **Default Directories**
 ===================
 
-The script work out of the box if the following directories are created. Just compile them to exe where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
+The script work out of the box if the following directories are created. Just compile them to exe where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer. 
+
+Same goes for the batch-txt helper script. It will generate a presentation after each item you selected and put in in your presentations folder with the template inside.
 
 Feel free to edit any of this and recompile it to suit your likings, I just tried to cover most use cases and have it work out of the box.
 
