@@ -192,6 +192,9 @@ PRESENTATION
 [screens]
 ```
 
+![This is an image](https://github.com/brokedarius/Auto-Up/blob/main/Screenshots/full-auto-sample-with-dupes.jpg)
+![This is an image](https://github.com/brokedarius/Auto-Up/blob/main/Screenshots/full-auto-dupes-log.png)
+
 Py3CreateTorrent Config File
 =============================
 
