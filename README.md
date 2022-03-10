@@ -132,7 +132,7 @@ If you want to do a test run before actually uploading you can comment out the l
 **Headful Mode Info**
 =================
 
-In headful mode, once it starts you can minimize the browser and let it run, when it's done and a message will appear on the Powershell console.
+In headful mode, once it starts you can minimize the browser and let it run, when it's done a message will appear on the Powershell console.
 
 **Headless Mode Info**
 ==================
