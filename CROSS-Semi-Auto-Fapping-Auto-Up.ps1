@@ -462,11 +462,11 @@ ForEach ($Item in $Args) {
 
          #FINALIZE UPLOAD
 
-         #$ChromeDriver.Manage().Timeouts().ImplicitWait = [TimeSpan]::FromSeconds(400);
+         $ChromeDriver.Manage().Timeouts().ImplicitWait = [TimeSpan]::FromSeconds(400);
 
-         #$ChromeDriver.FindElementByXpath("/html/body/div[3]/div[2]/div/form/table/tbody/tr[9]/td/input[2]").Click();
+         $ChromeDriver.FindElementByXpath("/html/body/div[3]/div[2]/div/form/table/tbody/tr[9]/td/input[2]").Click();
 
-         # "Uploading torrent...";
+         "Uploading torrent...";
 
      };
 
@@ -572,11 +572,11 @@ ForEach ($Item in $Args) {
 
          #FINALIZE UPLOAD
 
-         #$ChromeDriver.Manage().Timeouts().ImplicitWait = [TimeSpan]::FromSeconds(400);
+         $ChromeDriver.Manage().Timeouts().ImplicitWait = [TimeSpan]::FromSeconds(400);
 
-         #$ChromeDriver.FindElementByXpath("/html/body/div[2]/div[3]/div/form/table/tbody/tr[8]/td/input[2]").Click();
+         $ChromeDriver.FindElementByXpath("/html/body/div[2]/div[3]/div/form/table/tbody/tr[8]/td/input[2]").Click();
 
-         # "Uploading torrent...";
+         "Uploading torrent...";
 
      };
 
