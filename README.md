@@ -7,6 +7,8 @@ These scripts allows you to 'Cross-Upload', meaning uploading one file, one pres
 
 The semi-auto versions are more of an offspring that came later on when I figured some people would like something similar for smaller workflows.
 
+I wanted this as something where you can just select files and upload them with a right click as well as keep every presentation separate in case you need to re-up something it can be done instantly.
+
 Feel free to leave any suggestions/feedback that could potentially improve on this.
 
 Requirements
@@ -20,9 +22,12 @@ https://chromedriver.storage.googleapis.com/index.html?path=96.0.4664.45/
 
 You only need the files inside these folders:
 
+```
 selenium-dotnet-3.14.0\dist\Selenium.WebDriver.3.14.0.nupkg\lib\net45\Webdriver.dll
 
 selenium-dotnet-3.14.0\dist\Selenium.WebDriver.3.14.0.nupkg\lib\net45\Webdriver.xml
+
+```
 
 https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.14.0/selenium-dotnet-3.14.0.zip
 
@@ -44,13 +49,15 @@ https://pypi.org/project/py3createtorrent/
 
 (Technically you could remove the need for python by using another CLI based torrent generator than py3createtorrent.)
 
--PS1 to Exe or WinPS2-Exe, former is preferable in this case for compiling.
+-PS1 to Exe or WinPS2-Exe.
 
 https://www.majorgeeks.com/files/details/ps1_to_exe.html
 
+https://github.com/MScholtes/Win-PS2EXE
+
 -Transmission or any torrent client that can auto-add torrents from a specific folder without opening a file dialog (Qbittorrent or Tixati seem to work as well), I just like the simplicity of transmission for the process.
 
--Optional: Command line screen generator like MTZ or EZthumb. (You can skip this part if you prefer to generate screens on your own, else add a line for screen generation right after the first ForEach loop.)
+-Optional: Command line screen generator like MTN, mt or EZthumb. (You can skip this part if you prefer to generate screens on your own, else add a line for screen generation right after the first ForEach loop.)
 
 Best practice would be to generate the screens prior to running the script in order to be able to write quality presentations.
 
@@ -63,32 +70,38 @@ Feel free to edit any of this and recompile with WINPS2-EXE to suit your likings
 
 You can change those as much as you want, the $ENV:USERNAME variable is there so it works out of the box on any setup, just represents your current username on windows.
 
+```
 \Desktop\Uploads\Covers\
 \Desktop\Uploads\Presentations\
 \Desktop\Uploads\Screens\
 \Desktop\Uploads\Torrents\
+```
 
 Default ChromeDriver-Selenium directory
 =======================================
-
+```
 C:\ChromeDriver-Selenium\Chromedriver.exe 
 
 C:\ChromeDriver-Selenium\Webdriver.dll
 
 C:\ChromeDriver-Selenium\Webdriver.xml
+```
 
 Default Google Chrome binaries directory 
 ========================================
-
+```
 C:\Google Chrome\App\Chrome-bin\chrome.exe
+```
 
 You user profile directory, if you want to use your local version then point to a profile set up there.
-
-C:\Google Chrome\Data\profile\Default 
+```
+C:\Google Chrome\Data\profile\Default
+```
 
 Py3CreateTorrent default user config path
-
+```
 C:\Users\$ENV:USERNAME\.py3createtorrent.cfg
+```
 
 The default suffixes for the files are _s.jpg for the screens, _c.jpg for the presentation covers and _i.txt for the presentation text files, you are free to change that to any desired format as well.
 
@@ -96,16 +109,20 @@ Rest of the explaining is done in script for more convenience.
 
 Here is an example of how an upload folder should look with default settings when it comes to suffixes. (For folder based torrents you can set the covers/screens to be processed outside as well by changing values accordingly.)
 
+```
 \Cover_c.jpg (could also be _c.jpg or .gif or .anything-supported)
 \Movie.mkv
 \Screen_s.jpg
+```
 
 For individual files, here how it should look
 
+```
 Movie.mkv
 /Desktop/Uploads/Presentations/Movie_i.txt
 /Desktop/Uploads/Screens/Movie_s.txt
 /Desktop/Uploads/Covers/Movie_c.txt
+```
 
 The script supports individual files, megapacks, image sets, even isos upload just as well. Just make sure to put the screens and covers in their respective folders for those.
 
@@ -164,6 +181,19 @@ Full-Auto mode is made to automatically skip dupes no matter by how many % but I
 
 In full auto-mode all dupes will be logged in the dupes folder in a text file named after the torrent and containing all the information pertaining to that specific dupe.
 
+Here is an example of how a text file should look. Supports any BBCode template. The links for your screenshots will be added at the moment of uploading right after the line where is says screens. You can also change the script to keep them saved in the same text file for later usage.
+
+```
+Category-Emp
+Category-PB
+
+Taglist
+
+PRESENTATION
+
+[screens]
+```
+
 PY3CREATE TORRENT CONFIG FILE
 =============================
 
@@ -171,6 +201,7 @@ Your passkeys will be stored there for more convenience, if you ever need to cha
 
 Here is an example how you need to have it setup for the script to work. Just copy this into the .py3createtorrent.cfg file you will have to create in your user directory.
 
+```
 {
     "tracker_abbreviations": {
         "mytrackergroup": [
@@ -182,7 +213,7 @@ Here is an example how you need to have it setup for the script to work. Just co
     },
       "advertise": false
 }
-
+```
 
 
 
