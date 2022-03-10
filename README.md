@@ -120,9 +120,9 @@ For individual files, here how it should look
 
 ```
 Movie.mkv
-/Desktop/Uploads/Presentations/Movie_i.txt
-/Desktop/Uploads/Screens/Movie_s.txt
-/Desktop/Uploads/Covers/Movie_c.txt
+\Desktop\Uploads\Presentations\Movie_i.txt
+\Desktop\Uploads\Screens\Movie_s.txt
+\Desktop\Uploads\Covers\Movie_c.txt
 ```
 
 The script supports individual files, multi-files, images, and compressed files just as well. Just make sure to put the screens and covers in their respective folders for those.
