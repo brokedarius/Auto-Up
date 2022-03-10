@@ -30,7 +30,7 @@ $ChromeOptions.AddArguments(@(
 #));
 
 #$ChromeOptions.AddArguments(@(
-#"--window-size=2560,1440"
+#"--window-size=1920,1080"
 #));
 
 
