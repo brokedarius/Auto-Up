@@ -7,7 +7,9 @@ Some of these scripts allow you to 'Cross-Upload', meaning uploading one file, o
 
 The semi-auto versions are more of an offspring that came later on when I figured some people would like something similar for smaller workflows.
 
-I wanted this as something where you can just select files and upload them with a right click as well as keep every presentation separate in case you need to re-up something it can be done instantly.
+I wanted this as something where you can just select files and upload them with a right click as well as keep every presentation separate in case you need to re-up something, it can be done instantly.
+
+It is also possible to have the script to run as ps1 in any folder and just grab all items, if people are interested, I can post that variant as well.
 
 Feel free to leave any suggestions/feedback that could potentially improve on this.
 
@@ -158,7 +160,7 @@ In semi-auto mode you will be able to decide if you approve a dupe or not with a
 
 Be sure to put all your text files in the presentation folder, you can change or remove the default _i suffix if you don't want to use it. 
 
-In full-auto mode there is a batch text helper to generate templates after the torrent names you can simply use with a right click as well. They will contain prefilled templates, just add your categories, taglist and type your text presentation. You can change it and recompile it as well. That workflow is the fastest and allow the use of auto-complete in your text editor. 
+In full-auto mode there is a batch text helper to generate templates after the torrent names you can simply use with a right click as well. They will contain prefilled templates, just add your categories, taglist and type your text presentation. You can change it and recompile it as well. That workflow is the fastest and allow the use of auto-complete in your text editor for tags. 
 
 Category for EMP is always on line 1
 
@@ -170,7 +172,7 @@ Tags are on line 4, write them as one big line of text.
 
 Anything after line 5 will be part of the presentation.
 
-If you need bbcode closing tags after you screenshots, feel free to edit the closing tags line in the script to suit your needs.
+If you need bbcode closing tags after your screenshots, feel free to edit the closing tags line in the script to suit your needs. If you don't care about alignement, or don't have closing tags, you can ignore this.
 
 In case of errors for missing files or bbcode errors, the current torrent is skipped in full auto mode.
 
