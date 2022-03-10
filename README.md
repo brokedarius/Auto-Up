@@ -14,9 +14,21 @@ Requirements
 
 -Chromedriver 96
 
--Selenium webdriver 3.14
+https://chromedriver.storage.googleapis.com/index.html?path=96.0.4664.45/
+
+-Selenium webdriver 3.14 
+
+You only need the files inside these folders:
+
+selenium-dotnet-3.14.0\dist\Selenium.WebDriver.3.14.0.nupkg\lib\net45\Webdriver.dll
+
+selenium-dotnet-3.14.0\dist\Selenium.WebDriver.3.14.0.nupkg\lib\net45\Webdriver.xml
+
+https://github.com/SeleniumHQ/selenium/releases/download/selenium-3.14.0/selenium-dotnet-3.14.0.zip
 
 -Chrome 96 (Portable version highly recommended)
+
+https://portableapps.com/news/2021-11-15--google-chrome-portable-96.0.4664.45-released
 
 (Script should work just as well with a portable chromium of the same version, newer version of the browsers should work as well but they were not tested.)
 
@@ -26,24 +38,26 @@ You can either use a portable version, a separate profile or the one you already
 
 -Py3createtorrent  (You can also modify the script and skip this if you prefer to generate torrents on your own.)
 
+https://pypi.org/project/py3createtorrent/
+
 -Python 3 (Added to path)
 
 (Technically you could remove the need for python by using another CLI based torrent generator than py3createtorrent.)
 
--PS1 to Exe or WinPS2-Exe, former is preferable.
+-PS1 to Exe or WinPS2-Exe, former is preferable in this case for compiling.
+
+https://www.majorgeeks.com/files/details/ps1_to_exe.html
 
 -Transmission or any torrent client that can auto-add torrents from a specific folder without opening a file dialog (Qbittorrent or Tixati seem to work as well), I just like the simplicity of transmission for the process.
 
 -Optional: Command line screen generator like MTZ or EZthumb. (You can skip this part if you prefer to generate screens on your own, else add a line for screen generation right after the first ForEach loop.)
 
-Best practice would be to generate the screens prior to running the script in order to be able to write quality presentation.
-
-Remember folks, the pause/break key on your keyboard was made to pause scripts if you ever need to :)
+Best practice would be to generate the screens prior to running the script in order to be able to write quality presentations.
 
 DEFAULT DIRECTORIES 
 ===================
 
-The script exes work out of the box if the following directories are created. Just place them where you want to keep them and create shortcuts you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
+The script work out of the box if the following directories are created. Just compile them where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
 
 Feel free to edit any of this and recompile with WINPS2-EXE to suit your likings, I just tried to cover most use cases and have it work out of the box.
 
@@ -66,11 +80,11 @@ C:\ChromeDriver-Selenium\Webdriver.xml
 Default Google Chrome binaries directory 
 ========================================
 
-C:\GoogleChrome\App\Chrome-bin\chrome.exe
+C:\Google Chrome\App\Chrome-bin\chrome.exe
 
 You user profile directory, if you want to use your local version then point to a profile set up there.
 
-C:\GoogleChrome\Data\profile\Default 
+C:\Google Chrome\Data\profile\Default 
 
 Py3CreateTorrent default user config path
 
@@ -153,7 +167,7 @@ In full auto-mode all dupes will be logged in the dupes folder in a text file na
 PY3CREATE TORRENT CONFIG FILE
 =============================
 
-Your passkeys will be stored there for more convenience, if you ever need to change those you can just update that specific files, it wallows you to create shortcut names for your trackers.
+Your passkeys will be stored there for more convenience, if you ever need to change those you can just update that specific file, it allows you to create shortcut names for your trackers.
 
 Here is an example how you need to have it setup for the script to work. Just copy this into the .py3createtorrent.cfg file you will have to create in your user directory.
 
