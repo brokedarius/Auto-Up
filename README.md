@@ -139,7 +139,7 @@ In headful mode, once it starts you can minimize the browser and let it run, whe
 **Headless Mode Info**
 ==================
 
-You have to log yourself in the first time, I will post the login script on the respective trackers to make it easy. I will try to add more verbose and progress bars in the future.
+You have to log yourself in the first time with the login script. I will try to add more verbose and progress bars in the future.
 
 **Semi Auto Info**
 ===================
