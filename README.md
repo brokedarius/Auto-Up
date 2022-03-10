@@ -149,6 +149,9 @@ Supports undo/redo.
 
 In semi-auto mode you will be able to decide if you approve a dupe or not with a yes or no dialog.
 
+![This is an image](https://github.com/brokedarius/Auto-Up/blob/main/Screenshots/semi-auto.png)
+![This is an image](https://github.com/brokedarius/Auto-Up/blob/main/Screenshots/semi-auto-dupes.png)
+
 **Full Auto Mode Info**
 ===================
 
