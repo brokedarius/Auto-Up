@@ -30,7 +30,7 @@ $ChromeOptions.AddArguments(@(
 #));
 
 #$ChromeOptions.AddArguments(@(
-#"--window-size=2560,1440"
+#"--window-size=1920,1080"
 #));
 
 
@@ -336,11 +336,11 @@ ForEach ($Item in $Args) {
 
      #FINALIZE UPLOAD (Comment out the next 3 lines if you want to do some testing)
 
-     #$ChromeDriver.Manage().Timeouts().ImplicitWait = [TimeSpan]::FromSeconds(400);
+     $ChromeDriver.Manage().Timeouts().ImplicitWait = [TimeSpan]::FromSeconds(400);
 
-     #$ChromeDriver.FindElementByXpath("/html/body/div[3]/div[2]/div/form/table/tbody/tr[9]/td/input[2]").Click();
+     $ChromeDriver.FindElementByXpath("/html/body/div[3]/div[2]/div/form/table/tbody/tr[9]/td/input[2]").Click();
 
-     # "Uploading torrent...";
+     "Uploading torrent...";
 
      }
 
