@@ -3,7 +3,7 @@
 
 The aim of this collection of scripts is to help uploaders post stuff faster and avoid repetitive tasks. I tried to automate as much of the work as possible while keeping control where required such as categories, tags, presentations but only in the areas that must require intervention. All the rest is fully automated. This is mostly for those that which to upload more than 10 torrents at once.
 
-Some of these scripts allows you to 'Cross-Upload', meaning uploading one file, one presentation, 2 torrents with separate hashcodes on 2 trackers at once. 
+Some of these scripts allow you to 'Cross-Upload', meaning uploading one file, one presentation, 2 torrents with separate hashcodes on 2 trackers at once. 
 
 The semi-auto versions are more of an offspring that came later on when I figured some people would like something similar for smaller workflows.
 
