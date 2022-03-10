@@ -57,14 +57,13 @@ https://github.com/MScholtes/Win-PS2EXE
 
 -Transmission or any torrent client that can auto-add torrents from a specific folder without opening a file dialog.
 
--Optional: Command line screen generator like MTN, mt or EZthumb. (You can skip this part if you prefer to generate screens on your own, else add a line for screen generation right after the first ForEach loop.)
+-Optional: Command line screen generator like MTN, mt or EZthumb if you want it to be part of the process just add a line after the first Foreach loop.
 
-Best practice would be to generate the screens prior to running the script in order to be able to write quality presentations.
 
 **Default Directories**
 ===================
 
-The script work out of the box if the following directories are created. Just compile them where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
+The script work out of the box if the following directories are created. Just compile them to exe where you want to keep them and create shortcuts for the exes you will place in your shell:sendto folder. To navigate there just type shell:sendto in your file explorer.
 
 Feel free to edit any of this and recompile it to suit your likings, I just tried to cover most use cases and have it work out of the box.
 
